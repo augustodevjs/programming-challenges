@@ -10,7 +10,7 @@ public class ValidPalindrome
             if (char.IsLetterOrDigit(s[i])) {
                 caracteres.Add(char.ToLower(s[i]));
             }
-        }
+        }   
 
         var left = 0;
         var right = caracteres.Count - 1;
