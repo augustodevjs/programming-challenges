@@ -7,7 +7,7 @@ public class ContainsNearbyDuplicate
         var dic1 = new Dictionary<int, int>();
 
         for(var i = 0; i < nums.Length; i++) {
-            if(dic1.ContainsKey(nums[i])) {
+            if (dic1.ContainsKey(nums[i])) {
                 int previousIndex = dic1[nums[i]];
 
                 if (Math.Abs(i - previousIndex) <= k) {
