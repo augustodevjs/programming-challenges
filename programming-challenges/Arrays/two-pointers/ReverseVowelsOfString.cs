@@ -1,16 +1,11 @@
-﻿using System.Text;
+using System.Text;
 
-namespace programming_challenges;
+namespace programming_challenges.Arrays.two_pointers;
 
-public class Program
+public class ReverseVowelsOfString
 {
-    public static void Main()
-    {
-        var x = ReverseVowels("IceCreAm");
-        Console.WriteLine(x);
-    }
-
-    static string ReverseVowels(string s) {
+    // https://leetcode.com/problems/reverse-vowels-of-a-string/
+    public string ReverseVowels(string s) {
         var left = 0;
         var rigth = s.Length - 1;
         var str = new StringBuilder(s);
@@ -31,7 +26,7 @@ public class Program
         return str.ToString();
     }
 
-    static bool IsVowel(char c) {
+    private bool IsVowel(char c) {
         switch (c) {
             case 'a':
             case 'A':
@@ -53,4 +48,3 @@ public class Program
         }
     }
 }
-
