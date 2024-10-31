@@ -1,9 +1,9 @@
 namespace programming_challenges.Stack;
 
-public class NextGreaterElement
+public class NextGreaterElementI
 {
-    // https://leetcode.com/problems/next-greater-element-i/description/
-    public int[] NextGreaterElementSolution(int[] nums1, int[] nums2) {
+    // https://leetcode.com/problems/next-greater-element-i/  
+    public int[] NextGreaterElement(int[] nums1, int[] nums2) {
         Dictionary<int, int> nextGreater = new Dictionary<int, int>();
         Stack<int> stack = new Stack<int>();
         

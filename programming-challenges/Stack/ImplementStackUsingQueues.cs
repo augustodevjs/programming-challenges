@@ -1,5 +1,6 @@
 ﻿namespace programming_challenges.Stack;
 
+// https://leetcode.com/problems/implement-stack-using-queues
 public class MyStack {
     private Queue<int> queue1;
     private Queue<int> queue2;
